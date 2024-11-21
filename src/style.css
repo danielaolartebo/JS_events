@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    margin: 0;
+    padding: 1rem;
+}
+
+h1 {
+    color: #bada55;
+}
+
+.code-section {
+    padding: 2rem;
+    margin-bottom: 1rem;
+    border: 3px dashed #bada55;
+    border-radius: 5px;
+}
+
+.tasks-row {
+    display: flex;
+    gap: 1rem;
+}
+
+
+/* Task 1 styles start */
+.tip {
+    position: relative;
+    border: 2px solid purple;
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1.5rem;
+}
+
+.tip:focus {
+    outline: thick double #32a1ce;
+}
+
+.tip__title {
+    margin-top: 0;
+}
+
+.tip__close {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-weight: bold;
+}
+
+.tip__check {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    margin: 0;
+}
+
+.hidden {
+    display: none;
+}
+/* Task 1 styles end */
+
+
+/* Task 2 styles start */
+.email-form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    padding: 2rem;
+    border: 1px solid grey;
+}
+
+.email-form__legend {
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.email-form__row {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1rem;
+}
+
+.email-form__label {
+    min-width: 4rem;
+    text-transform: uppercase;
+    color: #777;
+}
+
+.email-form__input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #8C92AC;
+}
+
+.email-form__input_warning {
+    border-bottom: 3px dotted #ff9966;
+}
+
+.email-form__input:focus, .email-form__text:focus {
+    border-bottom-color: #5F9EA0;
+    outline: solid #32a1ce;
+}
+
+.email-form__text {
+    flex-grow: 1;
+    border: 1px dashed #ddd;
+}
+
+.email-form__button {
+    padding: 0.5rem;
+    background-color: #9F2B68;
+    color: #fff;
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+}
+
+.email-form__button:disabled {
+    background-color: #E0B0FF
+}
+
+.email-form__button:active:not(:disabled) {
+    background-color: #800020;
+}
+
+.email-form__button:focus {
+    outline: solid #32a1ce;
+}
+/* Task 2 styles end */
+
+/* Task 3 styles start */
+.page-load-mark {
+    padding: 1rem;
+    border: 3px dotted #00FF00;
+}
+/* Task 3 styles end */
